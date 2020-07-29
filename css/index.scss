@@ -44,7 +44,7 @@ body {
     grid-template-columns: 1fr 4fr 2fr;
     gap: 2.8rem;
     background-color: #ffffff;
-    height: 100vh;
+    height: 110vh;
 
     .left {
         margin-left: 3rem;
@@ -250,46 +250,92 @@ body {
 
         .table-details {
             margin-top: 2rem;
-            .date {
-                color: #b8b9c0;
-            }
 
-            .resp-table {
-                width: 100%;
-                display: table;
+            .row-data {
+                .date {
+                    margin-top: 5rem;
+                    color: #b8b9c0;
+                }
 
-                .resp-table-body {
-                    display: table-row-group;
+                .data {
+                    width: 100%;
 
-                    .resp-table-row {
-                        display: table-row;
-
-                        .table-body-cell {
-                            display: table-cell;
-
-                            .summary {
-                                h2 {
-                                    color: rgb(2, 0, 0);
-                                    font-size: 1rem;
-                                }
-
-                                p {
-                                    color: #b8b9c0;
-                                }
-                            }
-
-                            .dot {
-                                color: #f24941;
-                                margin-left: -5rem;
-                            }
-
-                            .amount {
-                                color: black;
-                            }
+                    .summary {
+                        h2 {
+                            color: rgb(2, 0, 0);
+                            font-size: 1rem;
                         }
+
+                        p {
+                            color: #b8b9c0;
+                        }
+
+                        .dot {
+                            color: hsl(0, 94%, 50%);
+                            // margin-left: -5rem;
+                        }
+
+                        .amount {
+                            color: black;
+                        }
+                    }
+
+                    .dott {
+                        color: red;
+                        font-size: 1.2rem;
+                        // border-color: rebeccapurple;
+                        // border-style: solid;
+                        background-color: rgb(248, 207, 207);
+                        border-radius: 10rem;
                     }
                 }
             }
+
+            // .row-data {
+            //     margin-top: 2rem;
+
+            //     .date {
+            //         margin-top: 5rem;
+            //         color: #b8b9c0;
+            //     }
+
+            //     .resp-table {
+            //         width: 100%;
+            //         display: table;
+
+            //         .resp-table-body {
+            //             display: table-row-group;
+
+            //             .resp-table-row {
+            //                 display: table-row;
+
+            //                 .table-body-cell {
+            //                     display: table-cell;
+
+            //                     .summary {
+            //                         h2 {
+            //                             color: rgb(2, 0, 0);
+            //                             font-size: 1rem;
+            //                         }
+
+            //                         p {
+            //                             color: #b8b9c0;
+            //                         }
+            //                     }
+
+            //                     .dot {
+            //                         color: #f24941;
+            //                         margin-left: -5rem;
+            //                     }
+
+            //                     .amount {
+            //                         color: black;
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
         }
     }
 
@@ -338,6 +384,46 @@ body {
                     margin-left: -2rem;
                 }
             }
+
+            .resp-table {
+                margin-top: 2rem;
+                margin-left: -5rem;
+                width: 100%;
+                display: table;
+
+                .resp-table-body {
+                    display: table-row-group;
+
+                    .resp-table-row {
+                        display: table-row;
+
+                        .table-body-cell {
+                            display: table-cell;
+                            padding: 2rem;
+
+                            .summary {
+                                h2 {
+                                    margin-left: -2rem;
+                                    color: rgb(2, 0, 0);
+                                    font-size: 1rem;
+                                }
+
+                                p {
+                                    color: #b8b9c0;
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .p {
+                margin-top: 20rem;
+                color: black;
+            }
+
+
         }
     }
 }
